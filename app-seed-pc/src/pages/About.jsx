@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-class Main extends Component {
+class About extends Component {
 	render () {
 		return (
 			<div>
-				{this.props.children}
+				关于我们
 			</div>
 		)
 	}
 }
 
-export default Main
+export default About

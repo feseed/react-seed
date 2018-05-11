@@ -8,8 +8,10 @@ import {
 const mainRoutes = [
 	{ path: '/nav', component: 'Nav' },
 	{ path: '/home', component: 'Home' },
+	{ path: '/about', component: 'About' },
 ]
 
+// 解析路由
 function parseRouter (routes = []) {
 	return routes.map((item, index) => {
 			return (
@@ -26,8 +28,8 @@ function parseRouter (routes = []) {
 const RouterDom = () => {
 	return (
 		<Switch>
-				{ parseRouter(mainRoutes) }
-				<Route render={() => <Redirect to="/404" />} />,
+			{ parseRouter(mainRoutes) }
+			<Route render={() => <Redirect to="/404" />} />,
 		</Switch>
 	)
 }
