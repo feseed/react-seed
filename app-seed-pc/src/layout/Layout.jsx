@@ -14,7 +14,6 @@ class CLayout extends Component {
 					<RouterDom/>
 				</MainContent>
 			</Layout>
-			
 		)
 	}
 }
