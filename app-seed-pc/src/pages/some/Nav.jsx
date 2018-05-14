@@ -6,6 +6,8 @@ class Nav extends Component {
 		return (
 			<div>
 				<Link to="/404">go 404</Link>
+				<br/>
+				<Link to="/page/ui/home">go Home</Link>
 			</div>
 		)
 	}

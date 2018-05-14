@@ -5,14 +5,13 @@ const SubMenu = Menu.SubMenu
 
 class SideItem extends Component {
 	state = {
-		mode: 'inline',
-		theme: 'dark',
-		defaultSelectes: ['1'],
 	}
 
 	_renderMenuItem (menuItem) {
 		return (
-			<Menu.Item key={menuItem.title}>
+			<Menu.Item
+				key={menuItem.path}
+			>
 				<Link to={menuItem.path}>
 					<Icon type={menuItem.icon} />
 					<span>{menuItem.title}</span>
@@ -24,7 +23,7 @@ class SideItem extends Component {
 	_renderSubMenu (subMenu) {
 		return (
 			<SubMenu
-				key={subMenu.title}
+				key={subMenu.path}
 				title={
 					<span>
 						<Icon type={subMenu.icon} />
@@ -45,7 +44,7 @@ class SideItem extends Component {
 	// 判断 侧边导航是否渲染 2 级导航
 	render () {
 		return (
-			<Menu theme={this.state.theme} defaultSelectedKeys={this.state.defaultSelectes} mode={this.state.mode}>
+			<Menu {...this.props} >
 				{
 					this.props.menus && this.props.menus.map(item => {
 						return item.children && item.children.length ? this._renderSubMenu(item) : this._renderMenuItem(item)

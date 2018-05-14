@@ -16,7 +16,7 @@ class App extends Component {
 		return (
 			<Router>
 				<Switch>
-					<Route exact path="/" render={() => <Redirect to="/page/home" />} />
+					<Route exact path="/" render={() => <Redirect to="/page/ui/home" />} />
 					<Route path='/page' component={Layout} />
 					<Route path='/404' component={NotFound} />
 					<Route component={NotFound} />
