@@ -7,8 +7,10 @@
 ```sh
 cd app-fake-redux
 # or
-cd app-seed
+cd app-seed-pc
 
 yarn install
 yarn start
 ```
+
+### 在线效果演示 [Go Go Go](https://gauseen.github.io/react-seed/#/)
