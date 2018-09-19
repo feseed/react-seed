@@ -1,5 +1,5 @@
 pipeline:
-  build:
+  frontend:
     image: node:8.11.1
     commands:
       - yarn install
