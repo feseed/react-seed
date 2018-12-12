@@ -13,4 +13,4 @@ yarn install
 yarn start
 ```
 
-### 在线效果演示 [Go Go Go](https://gauseen.github.io/react-seed/#/)
+### 在线演示 [Go Go Go](https://feseed.github.io/react-seed/#/)
